@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MarketDataAggregator.Application\MarketDataAggregator.Application.csproj" />
+    <ProjectReference Include="..\MarketDataAggregator.Infrastructure\MarketDataAggregator.Infrastructure.csproj" />
+    <ProjectReference Include="..\MarketDataAggregator.Domain\MarketDataAggregator.Domain.csproj" />
+  </ItemGroup>
+</Project>

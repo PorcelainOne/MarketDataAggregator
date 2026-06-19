@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: indigosoft-test-postgres
+    environment:
+      POSTGRES_DB: market_data
+      POSTGRES_USER: market_data
+      POSTGRES_PASSWORD: market_data
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./src/MarketDataAggregator.Infrastructure/Persistence/Schema.sql:/docker-entrypoint-initdb.d/001-schema.sql:ro
+
+volumes:
+  postgres_data:

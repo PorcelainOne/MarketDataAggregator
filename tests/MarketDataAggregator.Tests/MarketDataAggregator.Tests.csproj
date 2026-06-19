@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MarketDataAggregator.Application\MarketDataAggregator.Application.csproj" />
+    <ProjectReference Include="..\..\src\MarketDataAggregator.Infrastructure\MarketDataAggregator.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\MarketDataAggregator.Domain\MarketDataAggregator.Domain.csproj" />
+    <ProjectReference Include="..\..\src\MarketDataAggregator.Simulator\MarketDataAggregator.Simulator.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
